@@ -24,6 +24,13 @@
             background-color: white;
         }
 
+        caption{
+            background-color: darkgrey;
+            font-size: 18px;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+
         h1{
             text-align: center;
             text-decoration: underline;
@@ -72,10 +79,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Exemplo de Titulo de Tabela</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -191,7 +199,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>0000000</strong></td>
             </tr>
         </tfoot>
